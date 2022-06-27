@@ -22,7 +22,9 @@ module.exports = (env) => ({
       landmarks: path.resolve(srcPath, "js/landmarks"),
       scss: path.resolve(srcPath, "scss/"),
       assets: path.resolve(srcPath, "assets/"),
-      variables: path.resolve(srcPath, "scss/variables")
+      variables: path.resolve(srcPath, "scss/variables"),
+      images: path.resolve(srcPath, "assets/images"),
+      fonts: path.resolve(srcPath, "assets/fonts"),
     },
     extensions: [".js", ".jsx"],
   },
@@ -43,12 +45,7 @@ module.exports = (env) => ({
       },
       {
         test: /\.(scss|sass)$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          "css-loader",
-          "postcss-loader",
-          "sass-loader",
-        ],
+        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader", "sass-loader"],
       },
       {
         test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)$/,
@@ -69,7 +66,7 @@ module.exports = (env) => ({
     open: true,
     static: distPath,
     historyApiFallback: true,
-    port: '8080',
+    port: "8080",
     devMiddleware: {
       writeToDisk: true,
     },

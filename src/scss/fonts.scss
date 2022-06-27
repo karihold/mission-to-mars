@@ -1,0 +1,17 @@
+/* orbitron-v24-latin-regular*/
+@font-face {
+  font-family: "Orbitron";
+  font-style: medium;
+  font-weight: 400;
+  src: local(""), url("fonts/orbitron-v24-latin-regular.woff2") format("woff2"),
+    url("fonts/orbitron-v24-latin-regular.woff") format("woff");
+}
+
+/* raleway-v27-latin-regular */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("fonts/raleway-v27-latin-regular.woff2") format("woff2"),
+    url("fonts/raleway-v27-latin-regular.woff") format("woff");
+}
