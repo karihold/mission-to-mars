@@ -1,8 +1,8 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import { Link } from "react-router-dom";
 import "./header.scss";
 
-const Header = () => {
+const Header = (): ReactElement => {
   return (
     <header className="header">
       <nav className="header-nav">

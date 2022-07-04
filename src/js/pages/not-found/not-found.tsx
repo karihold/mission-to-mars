@@ -1,8 +1,8 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./not-found.scss";
 
-const NotFound = () => {
+const NotFound = (): ReactElement => {
   const { pathname } = useLocation();
 
   return (

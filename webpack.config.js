@@ -7,7 +7,7 @@ const srcPath = path.resolve(__dirname, "./src");
 const distPath = path.resolve(__dirname, "./dist");
 
 module.exports = (env) => ({
-  entry: path.resolve(srcPath, "App.jsx"),
+  entry: path.resolve(srcPath, "App.tsx"),
   output: {
     path: distPath,
     filename: "js/[name].js",
@@ -17,16 +17,16 @@ module.exports = (env) => ({
   devtool: env.mode === "production" ? "eval-source-map" : false,
   resolve: {
     alias: {
-      components: path.resolve(srcPath, "js/components"),
-      pages: path.resolve(srcPath, "js/pages"),
-      landmarks: path.resolve(srcPath, "js/landmarks"),
-      scss: path.resolve(srcPath, "scss/"),
-      assets: path.resolve(srcPath, "assets/"),
-      variables: path.resolve(srcPath, "scss/variables"),
-      images: path.resolve(srcPath, "assets/images"),
-      fonts: path.resolve(srcPath, "assets/fonts"),
+      "@components": path.resolve(srcPath, "js/components"),
+      "@pages": path.resolve(srcPath, "js/pages"),
+      "@landmarks": path.resolve(srcPath, "js/landmarks"),
+      "@scss": path.resolve(srcPath, "scss/"),
+      "@assets": path.resolve(srcPath, "assets/"),
+      "@scss-variables": path.resolve(srcPath, "scss/variables"),
+      "@images": path.resolve(srcPath, "assets/images"),
+      "@fonts": path.resolve(srcPath, "assets/fonts"),
     },
-    extensions: [".js", ".jsx"],
+    extensions: [".js", ".ts", ".tsx"],
   },
   plugins: [
     new CleanWebpackPlugin({ verbose: true }),
@@ -39,7 +39,7 @@ module.exports = (env) => ({
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.(js|ts|tsx)$/,
         exclude: /node_modules/,
         use: ["babel-loader"],
       },

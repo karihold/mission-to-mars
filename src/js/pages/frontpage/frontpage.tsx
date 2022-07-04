@@ -1,7 +1,7 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import "./frontpage.scss";
 
-const Frontpage = () => {
+const Frontpage = (): ReactElement => {
   return (
     <>
       <h1>Mission to Mars</h1>

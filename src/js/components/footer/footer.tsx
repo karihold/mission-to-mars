@@ -1,7 +1,7 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import "./footer.scss";
 
-const Footer = () => {
+const Footer = (): ReactElement => {
   return (
     <footer>
       <p>Footer</p>

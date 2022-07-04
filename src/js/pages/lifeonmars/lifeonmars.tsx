@@ -1,7 +1,7 @@
+import React, { ReactElement } from "react";
 import "./lifeonmars.scss";
-import React from "react";
 
-const LifeOnMars = () => {
+const LifeOnMars = (): ReactElement => {
   return (
     <>
       <h1>Let's talk</h1>
