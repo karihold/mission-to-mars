@@ -4,7 +4,11 @@ import "./frontpage.scss";
 const Frontpage = (): ReactElement => {
   return (
     <>
-      <h1>Mission to Mars</h1>
+      <div className="frontpage-image">
+        <div className="frontpage-text">
+          <h1>Mission to Mars</h1>
+        </div>
+      </div>
     </>
   );
 };
