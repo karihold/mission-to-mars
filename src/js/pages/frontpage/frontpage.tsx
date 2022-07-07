@@ -1,52 +1,18 @@
 import React, { ReactElement } from "react";
+
 import "./frontpage.scss";
+
+import StarryBackground from "@components/starry-background/starry-background";
+
+const portalTarget = document.querySelector("#render");
 
 const Frontpage = (): ReactElement => {
   return (
     <>
-      <div className="shootingStarContainer">
-        <div className="shootingStar"></div>
-        <div className="shootingStar"></div>
-        <div className="shootingStar"></div>
-        <div className="shootingStar"></div>
-        <div className="shootingStar"></div>
-        <div className="shootingStar"></div>
-        <div className="shootingStar"></div>
-        <div className="shootingStar"></div>
-        <div className="shootingStar"></div>
-        <div className="shootingStar"></div>
-      </div>
-      <div className="shootingStarContainer">
-        <div className="shootingStar"></div>
-        <div className="shootingStar"></div>
-        <div className="shootingStar"></div>
-        <div className="shootingStar"></div>
-        <div className="shootingStar"></div>
-        <div className="shootingStar"></div>
-        <div className="shootingStar"></div>
-        <div className="shootingStar"></div>
-        <div className="shootingStar"></div>
-        <div className="shootingStar"></div>
-      </div>
-      <div className="shootingStarContainer">
-        <div className="shootingStar"></div>
-        <div className="shootingStar"></div>
-        <div className="shootingStar"></div>
-        <div className="shootingStar"></div>
-        <div className="shootingStar"></div>
-        <div className="shootingStar"></div>
-        <div className="shootingStar"></div>
-        <div className="shootingStar"></div>
-        <div className="shootingStar"></div>
-        <div className="shootingStar"></div>
-      </div>
-      <div className="stars"></div>
-      <div className="twinkleMask"></div>
-      <div className="twinkleMask2"></div>
-      <div className="clouds"></div>
-
-      <div className="fogContainer">
-        <div className="fog"></div>
+      <StarryBackground />
+      <div className="frontpage-title-div">
+        <h1 className="frontpage-title-h1">Mission to mars</h1>
+        <button className="frontpage-title-button">Follow our journey!</button>
       </div>
     </>
   );

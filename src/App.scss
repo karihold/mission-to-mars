@@ -12,4 +12,15 @@ body,
 html {
   background: #000;
   height: 100vh;
+  color: $white;
+}
+
+main {
+  position: relative;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Orbitron;
 }

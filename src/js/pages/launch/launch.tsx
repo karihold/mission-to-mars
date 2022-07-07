@@ -4,7 +4,12 @@ import "./launch.scss";
 const Launch = (): ReactElement => {
   return (
     <>
-      <h1>Let's talk</h1>
+      <div className="top-image">
+        <div className="top-text">
+          <h1>LAUNCH OVERVIEW</h1>
+          <button>Follow our journey!</button>
+        </div>
+      </div>
     </>
   );
 };
