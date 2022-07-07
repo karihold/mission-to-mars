@@ -5,9 +5,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  z-index: 11;
 }
 
 body,
 html {
-  height: 100%;
+  background: #000;
+  height: 100vh;
 }

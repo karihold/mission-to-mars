@@ -4,10 +4,49 @@ import "./frontpage.scss";
 const Frontpage = (): ReactElement => {
   return (
     <>
-      <div className="frontpage-image">
-        <div className="frontpage-text">
-          <h1>Mission to Mars</h1>
-        </div>
+      <div className="shootingStarContainer">
+        <div className="shootingStar"></div>
+        <div className="shootingStar"></div>
+        <div className="shootingStar"></div>
+        <div className="shootingStar"></div>
+        <div className="shootingStar"></div>
+        <div className="shootingStar"></div>
+        <div className="shootingStar"></div>
+        <div className="shootingStar"></div>
+        <div className="shootingStar"></div>
+        <div className="shootingStar"></div>
+      </div>
+      <div className="shootingStarContainer">
+        <div className="shootingStar"></div>
+        <div className="shootingStar"></div>
+        <div className="shootingStar"></div>
+        <div className="shootingStar"></div>
+        <div className="shootingStar"></div>
+        <div className="shootingStar"></div>
+        <div className="shootingStar"></div>
+        <div className="shootingStar"></div>
+        <div className="shootingStar"></div>
+        <div className="shootingStar"></div>
+      </div>
+      <div className="shootingStarContainer">
+        <div className="shootingStar"></div>
+        <div className="shootingStar"></div>
+        <div className="shootingStar"></div>
+        <div className="shootingStar"></div>
+        <div className="shootingStar"></div>
+        <div className="shootingStar"></div>
+        <div className="shootingStar"></div>
+        <div className="shootingStar"></div>
+        <div className="shootingStar"></div>
+        <div className="shootingStar"></div>
+      </div>
+      <div className="stars"></div>
+      <div className="twinkleMask"></div>
+      <div className="twinkleMask2"></div>
+      <div className="clouds"></div>
+
+      <div className="fogContainer">
+        <div className="fog"></div>
       </div>
     </>
   );

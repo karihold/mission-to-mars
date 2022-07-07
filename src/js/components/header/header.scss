@@ -5,6 +5,8 @@ header {
   display: flex;
   flex-flow: column;
   align-items: flex-end;
+  background-color: white;
+  position: relative;
 }
 
 //nav
@@ -29,6 +31,7 @@ header {
   text-decoration: none;
   font-size: 26px;
   text-align: center;
+  color: blue;
 
   &:hover {
     opacity: 0.6;
