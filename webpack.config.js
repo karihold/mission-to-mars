@@ -26,6 +26,7 @@ module.exports = (env) => ({
       "@scss-variables": path.resolve(srcPath, "scss/variables"),
       "@images": path.resolve(srcPath, "assets/images"),
       "@fonts": path.resolve(srcPath, "assets/fonts"),
+      "@newsletter": path.resolve(srcPath, "js/components/newsletter"),
     },
     extensions: [".js", ".ts", ".tsx"],
   },

@@ -8,6 +8,7 @@ import Timeline from "@pages/timeline/timeline";
 import NotFound from "@pages/not-found/not-found";
 import Header from "@components/header/header";
 import Footer from "@components/footer/footer";
+import Newsletter from "@components/newsletter/newsletter";
 
 import "./App.scss";
 
@@ -26,6 +27,7 @@ const App = (): ReactElement => {
             <Route path="launch" element={<Launch />} />
             <Route path="lifeonmars" element={<LifeOnMars />} />
             <Route path="timeline" element={<Timeline />} />
+            <Route path="newsletter" element={<Newsletter />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

@@ -1,5 +1,5 @@
 import React, { ReactElement } from "react";
-import "./timeline.scss";
+import "./newsletter.scss";
 
 const Timeline = (): ReactElement => {
   return (
