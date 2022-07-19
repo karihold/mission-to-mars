@@ -1,5 +1,6 @@
 @import "@scss/fonts.scss";
 @import "@scss-variables";
+@import "@scss/mixins.scss";
 
 * {
   margin: 0;
@@ -13,6 +14,7 @@ html {
   background: #000;
   height: 100vh;
   color: $white;
+  font-family: Raleway;
 }
 
 main {
@@ -25,5 +27,11 @@ main {
 h1,
 h2,
 h3 {
+  font-family: Orbitron;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
   font-family: Orbitron;
 }

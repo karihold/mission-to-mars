@@ -1,7 +1,34 @@
+@import "@scss/mixins.scss";
+
 .frontpage-title-section {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   margin-top: 40vh;
   font-size: 5em;
+}
+
+.frontpage-links {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.frontpage-title-newsletter-button {
+  font-size: 0.5em;
+}
+
+//circle links
+.launch-frontpage-link {
+  @include frontpage-circle-links;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/launch.jpg");
+  background-size: cover;
+}
+
+.transportation-frontpage-link {
+  @include frontpage-circle-links;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/moon.jpg");
+  background-size: cover;
 }

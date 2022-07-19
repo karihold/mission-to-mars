@@ -1,0 +1,9 @@
+@mixin frontpage-circle-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+}

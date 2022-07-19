@@ -10,7 +10,7 @@ const Frontpage = (): ReactElement => {
       <StarryBackground />
       <section className="frontpage-title-section">
         <h1 className="frontpage-title-h1">Mission to mars</h1>
-        <a href="newsletter" className="frontpage-title-button">
+        <a href="newsletter" className="frontpage-title-newsletter-button">
           Follow our journey!
         </a>
       </section>
@@ -23,6 +23,9 @@ const Frontpage = (): ReactElement => {
         </a>
         <a href="/lifeonmars" className="lifeonmars-frontpage-link">
           Life on Mars
+        </a>
+        <a href="/newsletter" className="newsletter-frontpage-link">
+          Join our newsletter
         </a>
       </section>
     </>
