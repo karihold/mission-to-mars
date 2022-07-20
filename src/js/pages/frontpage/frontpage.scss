@@ -1,4 +1,5 @@
 @import "@scss/mixins.scss";
+@import "@scss-variables";
 
 .frontpage-title-section {
   display: flex;
@@ -31,4 +32,17 @@
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/moon.jpg");
   background-size: cover;
+}
+
+.lifeonmars-frontpage-link {
+  @include frontpage-circle-links;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/mars.jpg");
+  background-size: cover;
+}
+
+.newsletter-frontpage-link {
+  @include frontpage-circle-links;
+  background-color: $orange;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
 }

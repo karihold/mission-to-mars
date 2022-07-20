@@ -39,5 +39,5 @@
           "@assets/*": ["assets/*"],
       }
     },
-    "include": ["src/*"]
+    "include": ["src/*", "modules/*"]
   }
