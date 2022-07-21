@@ -18,8 +18,8 @@ const Frontpage = (): ReactElement => {
         <a href="/launch" className="launch-frontpage-link">
           Launch Overview
         </a>
-        <a href="/transportation" className="transportation-frontpage-link">
-          Transportation
+        <a href="/timeline" className="timeline-frontpage-link">
+          Timeline
         </a>
         <a href="/lifeonmars" className="lifeonmars-frontpage-link">
           Life on Mars
