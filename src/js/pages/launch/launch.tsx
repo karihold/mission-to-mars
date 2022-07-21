@@ -1,6 +1,11 @@
 import React, { ReactElement } from "react";
 import "./launch.scss";
-import earthRound from "@assets/images/earth-round.jpg";
+
+import EarthRoundImage from "@assets/images/earth-round.jpg";
+import LaunchImage from "@assets/images/launch.jpg";
+import AstronautWhite from "@assets/images/astronaut-white.jpg";
+
+import LaunchDescription from "@components/launch-description/launch-description";
 
 const Launch = (): ReactElement => {
   return (
@@ -12,23 +17,37 @@ const Launch = (): ReactElement => {
         </div>
       </section>
       <section className="launch-main">
-        <article className="launch-mission-article">
-          <div className="launch-mission-text-div">
-            <h2 className="launch-mission-h2">Next Planned Mission: CRS-21</h2>
-            <h3 className="launch-mission-h3">Launch time: 06.12.2020 11:17 o'clock</h3>
-            <p className="launch-mission-p">
-              Launch site: Kennedy Space Center Historic Launch Complex 39A Description
-            </p>
-            <p className="launch-mission-p">
-              SpaceX's 21st ISS resupply mission on behalf of NASA and the first under the CRS-2 contract, this mission
-              brings essential supplies to the International Space Station using the cargo variant of SpaceX's Dragon 2
-              spacecraft. The external payload for this mission is the Nanoracks Bishop Airlock. Falcon 9 and Dragon
-              launch from LC-39A, Kennedy Space Center and the booster is expected to land on an ASDS. The mission will
-              be complete with return and recovery of the Dragon capsule and down cargo.
-            </p>
-          </div>
-          <img className="launch-mission-img" src={earthRound} />
-        </article>
+        <LaunchDescription
+          nextPlannedMission="CRS-21"
+          launchTime="06.12.2020 11:17 o'clock"
+          rocket="Falcon 9"
+          launchSite="Kennedy Space Center Historic Launch Complex 39A"
+          description="SpaceX's 21st ISS resupply mission on behalf of NASA and the first under the CRS-2 contract, this mission brings essential supplies to the International Space Station using the cargo variant of SpaceX's Dragon 2 spacecraft. The external payload for this mission is the Nanoracks Bishop Airlock. Falcon 9 and Dragon launch from LC-39A, Kennedy Space Center and the booster is expected to land on an ASDS. The mission will be complete with return and recovery of the Dragon capsule and down cargo."
+          image={EarthRoundImage}
+          imageAlt="image of earth from space"
+        />
+        <LaunchDescription
+          nextPlannedMission="Starlink-15 (v1.0)"
+          launchTime="06.12.2020 11:17 o'clock"
+          rocket="Falcon 9"
+          launchSite="Kennedy Space Center Historic Launch Complex 39A"
+          description="On Sunday, July 17 at 10:20 a.m. ET, SpaceX launched 53 Starlink satellites from Space Launch Complex 40 (SLC-40) at Cape Canaveral Space Force Station in Florida.
+          This was the 13th flight for the Falcon 9 first stage booster supporting this mission, which previously launched Dragon’s first crew demonstration mission, the RADARSAT Constellation Mission, SXM-7, and now 10 Starlink missions."
+          image={LaunchImage}
+          imageAlt="image of earth from space"
+        />
+        <LaunchDescription
+          nextPlannedMission=""
+          launchTime="06.12.2020 11:17 o'clock"
+          rocket="Falcon 9"
+          launchSite="Kennedy Space Center Historic Launch Complex 39A"
+          description="SpaceX's 21st ISS resupply mission on behalf of NASA and the first under the CRS-2 contract, this mission brings essential supplies to the International Space Station using the cargo variant of SpaceX's Dragon 2 spacecraft. The external payload for this mission is the Nanoracks Bishop Airlock. Falcon 9 and Dragon launch from LC-39A, Kennedy Space Center and the booster is expected to land on an ASDS. The mission will be complete with return and recovery of the Dragon capsule and down cargo."
+          image={AstronautWhite}
+          imageAlt="image of earth from space"
+        />
+        <a href="/newsletter" className="newsletter-frontpage-link">
+          Join our newsletter
+        </a>
       </section>
     </>
   );

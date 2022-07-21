@@ -33,7 +33,10 @@ module.exports = (env) => ({
   plugins: [
     new CleanWebpackPlugin({ verbose: true }),
     new CopyPlugin({
-      patterns: [{ from: path.resolve(srcPath, "assets/images"), to: path.resolve(distPath, "assets/images") }],
+      patterns: [
+        { from: path.resolve(srcPath, "assets/images"), to: path.resolve(distPath, "assets/images") },
+        { from: path.resolve(srcPath, "assets/fonts"), to: path.resolve(distPath, "assets/fonts") },
+      ],
     }),
     new MiniCssExtractPlugin({ filename: "css/[name].css" }),
     new HtmlWebpackPlugin({

@@ -58,6 +58,11 @@ const Timeline = (): ReactElement => {
           </p>
         </li>
       </ul>
+      <div>
+        <a href="/newsletter" className="newsletter-frontpage-link">
+          Join our newsletter
+        </a>
+      </div>
     </>
   );
 };
