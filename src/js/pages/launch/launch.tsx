@@ -12,8 +12,10 @@ const Launch = (): ReactElement => {
     <>
       <section className="top-image">
         <div className="top-text">
-          <h1>LAUNCH OVERVIEW</h1>
-          <button>Follow our journey!</button>
+          <h1 className="top-h1">LAUNCH OVERVIEW</h1>
+          <a href="newsletter" className="frontpage-title-newsletter-button">
+            Follow our journey!
+          </a>
         </div>
       </section>
       <section className="launch-main">
