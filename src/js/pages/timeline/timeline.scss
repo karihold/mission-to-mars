@@ -1,6 +1,12 @@
+@import "@scss-variables";
+@import "@scss/mixins.scss";
+
+.timeline-section {
+  margin-bottom: 10vh;
+}
 .timeline {
   position: relative;
-  max-width: 1200px;
+  max-width: 1250px;
   margin: 0 auto;
   list-style: none;
 }
@@ -18,7 +24,6 @@
 .timeline-item {
   padding: 20px;
   padding-bottom: 20px;
-  background-color: #d7d7d9;
   position: relative;
   border-radius: 6px;
   width: calc(50% - 40px);
@@ -26,26 +31,14 @@
 }
 
 .timeline-item-title {
-  font-size: 21px;
+  font-size: 27px;
   margin-bottom: 16px;
-  text-align: center;
+  text-align: left;
 }
 
 .timeline-item-text {
   font-size: 21px;
   line-height: 1.7;
-}
-
-/*Circle Base*/
-.timeline-item::after {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  background-color: #d7d7d9;
-  border: 4px solid #f8b632;
-  border-radius: 50%;
-  z-index: 1;
 }
 
 /* Timelinestyling for desktop */
@@ -58,7 +51,7 @@
     top: 22px;
     width: 0;
     z-index: 1;
-    border: medium solid #d7d7d9;
+    border: medium solid $dark-orange;
   }
 
   /*Circle Base*/
@@ -74,7 +67,7 @@
   /*Arrow Left Items*/
   .timeline-item:nth-child(odd)::before {
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent #d7d7d9;
+    border-color: transparent transparent transparent $dark-orange;
     right: -10px;
   }
 
@@ -94,7 +87,7 @@
   .timeline-item:nth-child(even)::before {
     left: -10px;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #d7d7d9 transparent transparent;
+    border-color: transparent $dark-orange transparent transparent;
   }
 
   /*Circle Right Items*/
@@ -102,6 +95,10 @@
     /* 25px(Circle Width) + 4px(Circle border) / 2 + 40px (Margin) + 6px (Timeline width)*/
     left: -60.5px;
   }
+}
+
+.timeline-newsletter-section {
+  margin-bottom: 10vh;
 }
 
 @media (max-width: 1320px) {

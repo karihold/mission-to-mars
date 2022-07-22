@@ -12,7 +12,7 @@ const Timeline = (): ReactElement => {
           </a>
         </div>
       </section>
-      <section>
+      <section className="timeline-section">
         <ul className="timeline">
           <li className="timeline-item">
             <h2 className="timeline-item-title">2016: SpaceX announced plans to fly its earliest missions to Mars.</h2>
@@ -68,7 +68,7 @@ const Timeline = (): ReactElement => {
           </li>
         </ul>
       </section>
-      <section>
+      <section className="timeline-newsletter-section">
         <a href="/newsletter" className="newsletter-frontpage-link">
           <span>Join our </span>
           <span>newsletter</span>
