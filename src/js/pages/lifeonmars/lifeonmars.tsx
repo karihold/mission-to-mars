@@ -27,6 +27,7 @@ const LifeOnMars = (): ReactElement => {
         </div>
         <img className="lifeonmars-img" src={AstronautBlack} alt="astronaut in black and white" />
       </section>
+      <section></section>
       <a href="/newsletter" className="newsletter-frontpage-link">
         Join our newsletter
       </a>
