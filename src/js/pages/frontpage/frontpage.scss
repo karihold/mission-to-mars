@@ -5,14 +5,18 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  margin-top: 40vh;
-  font-size: 5em;
+  margin-top: 30vh;
+  font-size: 6em;
 }
 
 .frontpage-links {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  margin-top: 40vh;
+  font-size: 4em;
+  gap: 20vh;
+  margin-bottom: 20vh;
 }
 
 .frontpage-title-newsletter-button {
@@ -23,25 +27,20 @@
 .launch-frontpage-link {
   @include frontpage-circle-links;
 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/launch.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/images/launch.jpg");
   background-size: cover;
 }
 
 .timeline-frontpage-link {
   @include frontpage-circle-links;
 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/moon.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/images/moon.jpg");
   background-size: cover;
 }
 
 .lifeonmars-frontpage-link {
   @include frontpage-circle-links;
 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/mars.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/images/mars.jpg");
   background-size: cover;
-}
-
-.newsletter-frontpage-link {
-  @include frontpage-circle-links;
-  background-color: $dark-orange;
 }

@@ -1,0 +1,9 @@
+@import "@scss-variables";
+@import "@scss/mixins.scss";
+
+.newsletter-frontpage-link {
+  @include frontpage-circle-links;
+  background-color: $dark-orange;
+
+  flex-flow: column;
+}
