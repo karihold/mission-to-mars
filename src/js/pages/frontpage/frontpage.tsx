@@ -1,6 +1,7 @@
 import React, { ReactElement } from "react";
 import "./frontpage.scss";
 import StarryBackground from "@components/starry-background/starry-background";
+import NewsletterPrompt from "@components/newsletter-prompt/newsletter-prompt";
 
 const portalTarget = document.querySelector("#render");
 
@@ -16,7 +17,7 @@ const Frontpage = (): ReactElement => {
       </section>
       <section className="frontpage-links">
         <a href="/launch" className="launch-frontpage-link">
-          Launch Overview
+          Launch
         </a>
         <a href="/timeline" className="timeline-frontpage-link">
           Timeline
@@ -24,9 +25,7 @@ const Frontpage = (): ReactElement => {
         <a href="/lifeonmars" className="lifeonmars-frontpage-link">
           Life on Mars
         </a>
-        <a href="/newsletter" className="newsletter-frontpage-link">
-          Join our newsletter
-        </a>
+        <NewsletterPrompt />
       </section>
     </>
   );

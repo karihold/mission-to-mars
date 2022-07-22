@@ -70,7 +70,8 @@ const Timeline = (): ReactElement => {
       </section>
       <section>
         <a href="/newsletter" className="newsletter-frontpage-link">
-          Join our newsletter
+          <span>Join our </span>
+          <span>newsletter</span>
         </a>
       </section>
     </>

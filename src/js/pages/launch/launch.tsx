@@ -48,7 +48,8 @@ const Launch = (): ReactElement => {
           imageAlt="image of earth from space"
         />
         <a href="/newsletter" className="newsletter-frontpage-link">
-          Join our newsletter
+          <span>Join our </span>
+          <span>newsletter</span>
         </a>
       </section>
     </>
