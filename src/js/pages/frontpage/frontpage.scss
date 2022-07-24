@@ -21,6 +21,11 @@
 
 .frontpage-title-newsletter-button {
   font-size: 40px;
+
+  &:hover {
+    transition: 0.1s ease-in-out;
+    text-decoration: underline;
+  }
 }
 
 //circle links

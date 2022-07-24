@@ -21,6 +21,7 @@ module.exports = (env) => ({
       "@components": path.resolve(srcPath, "js/components"),
       "@pages": path.resolve(srcPath, "js/pages"),
       "@landmarks": path.resolve(srcPath, "js/landmarks"),
+      "@utils": path.resolve(srcPath, "js/utils"),
       "@scss": path.resolve(srcPath, "scss/"),
       "@assets": path.resolve(srcPath, "assets/"),
       "@scss-variables": path.resolve(srcPath, "scss/variables"),

@@ -32,6 +32,7 @@
           "@components/*": ["js/components/*"],
           "@pages/*": ["js/pages/*"],
           "@landmarks/*": ["js/landmarks/*"],
+          "@utils/*": ["js/utils/*"],
           "@scss/*": ["scss/*"],
           "@scss-variables": ["scss/variables.scss"],
           "@images/*": ["assets/images/*"],
