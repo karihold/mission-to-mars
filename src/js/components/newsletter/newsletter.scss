@@ -1,0 +1,114 @@
+@import "@scss-variables";
+.newsletter-form {
+  margin-top: 10vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 5vh;
+  border: solid 2px $white;
+  border-radius: 10px;
+  width: 40%;
+  height: auto;
+  padding: 90px 10px 11px 21px;
+}
+
+.newsletter-container {
+  color: $white;
+}
+
+.form-header {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+}
+.form-title {
+  font-size: 3.2em;
+}
+.form-label {
+  display: flex;
+  flex-flow: column;
+}
+input {
+  background-color: #020202;
+  //color: $white;
+  font-size: 0.9em;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid $white;
+  border-radius: 4px;
+}
+
+.radio-button-section {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  font-size: 0.9em;
+  padding: 10px 20px;
+}
+
+.form-checkbox {
+  margin-right: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+.subscription-message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  color: #f8b632;
+  z-index: 2;
+  text-align: center;
+  font-size: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-inputs-container {
+  width: 80%;
+  display: flex;
+  flex-flow: column;
+  align-items: left;
+  gap: 20px;
+
+  font-size: 2em;
+}
+
+.form-submit-button {
+  font-family: raleway;
+  font-size: 40px;
+  border-radius: 10px;
+  padding: 7px 30px;
+  cursor: pointer;
+  background-color: $dark-orange;
+  color: $white;
+
+  &:hover {
+    transform: scale(0.95);
+  }
+}
+.form-cancel-button {
+  font-family: raleway;
+  font-size: 30px;
+  border-radius: 10px;
+  padding: 7px 30px;
+  cursor: pointer;
+  color: $white;
+  background-color: #020202;
+  margin-bottom: 10vh;
+
+  &:hover {
+    transform: scale(0.95);
+  }
+}
+
+.validation-message {
+  color: $dark-orange;
+}
