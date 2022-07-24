@@ -36,6 +36,11 @@ header {
   &:hover {
     opacity: 0.6;
   }
+
+  &.active {
+    text-decoration: underline;
+    text-decoration-color: gold;
+  }
 }
 
 .darkmode-indicator {

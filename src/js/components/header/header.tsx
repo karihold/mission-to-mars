@@ -1,5 +1,5 @@
 import React, { ReactElement } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./header.scss";
 
 const Header = (): ReactElement => {
@@ -8,24 +8,24 @@ const Header = (): ReactElement => {
       <nav className="header-nav">
         <ul className="nav-ul">
           <li className="nav-item">
-            <Link className="nav-item-link" to="/">
+            <NavLink className="nav-item-link" to="/">
               HOME
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link className="nav-item-link" to="/launch">
+            <NavLink className="nav-item-link" to="/launch">
               LAUNCH
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item ">
-            <Link className="nav-item-link" to="/timeline">
+            <NavLink className="nav-item-link" to="/timeline">
               TIMELINE
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link className="nav-item-link" to="/lifeonmars">
+            <NavLink className="nav-item-link" to="/lifeonmars">
               LIFE ON MARS
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>
