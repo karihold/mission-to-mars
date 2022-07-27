@@ -32,20 +32,20 @@
 .launch-frontpage-link {
   @include frontpage-circle-links;
 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/images/launch.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("@assets/images/launch.jpg");
   background-size: cover;
 }
 
 .timeline-frontpage-link {
   @include frontpage-circle-links;
 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/images/moon.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("@assets/images/moon.jpg");
   background-size: cover;
 }
 
 .lifeonmars-frontpage-link {
   @include frontpage-circle-links;
 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/images/mars.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("@assets/images/mars.jpg");
   background-size: cover;
 }
