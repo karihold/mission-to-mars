@@ -10,6 +10,8 @@ import Header from "@components/header/header";
 import Footer from "@components/footer/footer";
 import Newsletter from "@components/newsletter/newsletter";
 
+declare const BASENAME: string;
+
 import "./App.scss";
 
 const renderTarget = document.querySelector("#render");
@@ -19,7 +21,7 @@ if (!renderTarget) throw new Error("Could not find the render target!");
 const App = (): ReactElement => {
   return (
     <>
-      <Router>
+      <Router basename={BASENAME}>
         <Header />
         <main>
           <Routes>
